@@ -63,7 +63,7 @@
             <p>The full markup might look like the following:
                <![CDATA[<figure><graphic url="image1.jpg"/><head>Figure Title</head><figDesc>Description of figure file</figDesc></figure>]]></p>
             <figure>
-               <graphic url="https://www.flickr.com/photos/139890231@N03/41668854741/in/dateposted-public/"/>
+               <graphic url="https://farm1.staticflickr.com/919/41668854741_c9e98641bc_o_d.jpg"/>
                <head>Figure Title</head>
                <figDesc>Description of figure file</figDesc>
             </figure>
@@ -75,7 +75,7 @@
                file name and path as a value of @facs on <![CDATA[<pb/>]]>:</p>
             <p><![CDATA[<pb n="1" facs="page1.png"/>]]></p>
             <pb n="1"
-               facs="https://www.flickr.com/photos/139890231@N03/41668854741/in/dateposted-public/"
+               facs="https://farm1.staticflickr.com/919/41668854741_c9e98641bc_o_d.jpg"
             />
          </div>
          <div>
@@ -85,7 +85,7 @@
             <p><![CDATA[<figure><graphic url="image1.jpg"/><head>Figure Title</head><figDesc>Description of figure file</figDesc></figure>]]></p>
             <p>Click the note below:</p>
             <note>Here's an image contained within a note: <figure>
-               <graphic url="https://flic.kr/p/26u8LN2"/>
+               <graphic url="https://farm1.staticflickr.com/919/41668854741_c9e98641bc_o_d.jpg"/>
                   <head>Figure Title</head>
                   <figDesc>Description of figure file</figDesc>
                </figure>
