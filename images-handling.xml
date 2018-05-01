@@ -72,10 +72,12 @@
          <div>
             <head rend="bold">IMAGES IN NOTES</head>
             <p>You can add images into your notes by using the same setup as scenario 1 in Basic Encoding above. To see how this works, click the note
-               at the end of this sentence (use the drop-down menu at the top of this page and select "XML view" to see how this is encoded).<note>Here's an image contained within a note: <figure>
-                     <graphic url="https://farm1.staticflickr.com/919/41668854741_a55947fd40_m_d.jpg"/>
-                  </figure>
-               </note></p>
+               at the end of this sentence (use the drop-down menu at the top of this page and select "XML view" to see how this is encoded). Note
+               that this doesn't seem to work if the note is included inside a paragraph. If the note appears after the paragraph closes, it works. </p>
+            <note>Here's an image contained within a note: <figure>
+                  <graphic url="https://farm1.staticflickr.com/919/41668854741_a55947fd40_m_d.jpg"/>
+               </figure>
+            </note>
          </div>
       </body>
    </text>
