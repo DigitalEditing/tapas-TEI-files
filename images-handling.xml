@@ -48,46 +48,32 @@
             <head>BASIC ENCODING SCENARIOS</head>
             <p>TAPAS supports the display of image files in two ways:</p>
             <p>1.<![CDATA[<figure>]]></p>
-            <p>In the following case, we have an image file, "TYI1064.jpg," which we've uploaded to Flickr. To encode this image into our TEI file, we
-               would reference the file and its path on the @url value on <![CDATA[graphic]]>: <![CDATA[<graphic url="image1.jpg"/>]]>. <note>In this
-                  case, our image file is NOT loaded along with file as part of the TAPAS Record (because this doesn't work right now), so we are
-                  referencing the full url of the image at Flickr. To do this (to reference an image file that lived on another web server), we add
-                  the full url path on the @url value. To get the URL, Click the "Download" button on your image page (it looks like an arrow pointing
-                  down), Decide which size image you want and Control-click/right-click on that size, Select "Copy link location", which will add the
-                  URL to your clipboard, and Paste the URL into your TEI.</note></p>
-            <p>We then wrap <![CDATA[<graphic/>]]> with <![CDATA[<figure>]]>. We can also add a title to this image using <![CDATA[<head>]]> and a
-               description using <![CDATA[<figDesc>]]>:</p>
-            <p>The full markup might look like the following:
-               <![CDATA[<figure><graphic url="https://farm1.staticflickr.com/919/41668854741_a55947fd40_m_d.jpg"/><head>Full Page from The Young Idea</head><figDesc>Fourth Page of Sixth Issue</figDesc></figure>]]></p>
+            <p>Here is an image file, "TYI1064.jpg," which we've uploaded to Flickr and then encoded into our TEI file by including the file's path as
+               the value (in quotation marks) for the attribute @url on <![CDATA[<graphic>]]>. Our image file is NOT loaded along with file as part of
+               the TAPAS Record (because this doesn't work right now), so we are referencing the full url of the image at Flickr. To do this (to
+               reference an image file that lives on another web server), we add the full url path on the @url value. To get the URL from Flickr,
+               click the "Download" button on your image page (it looks like an arrow pointing down), Decide which size image you want (I've used
+               "small" for this example) and Control-click/right-click on that size, Select "Copy link location", which will add the URL to your
+               clipboard, and Paste the URL into your TEI.Here is what it should look like (see the XML view to see how this is encoded)</p>
             <figure>
                <graphic url="https://farm1.staticflickr.com/919/41668854741_a55947fd40_m_d.jpg"/>
-               <head>Full page from The Young Idea</head>
-               <figDesc>Fourth Page of Sixth Issue</figDesc>
             </figure>
 
             <p>2.<![CDATA[@facs on <pb/>]]></p>
-            <p>We may also wish to add page images of our markup up text. We could do this by uploading our page images as "Auxillary Files" for our
-               TAPAS Record (but this isn't working at the moment). We would then call on these files following a similar approach as putlined above, except we add the file name and path as
-               a value of @facs on <![CDATA[<pb/>]]>:</p>
-            <p><![CDATA[<pb n="1" facs="https://farm1.staticflickr.com/919/41668854741_a55947fd40_m_d.jpg"/>]]></p>
-            <pb n="1" facs="https://farm1.staticflickr.com/919/41668854741_a55947fd40_m_d.jpg"/>
+            <p>We may also wish to add page images of our marked-up text. We could do this by uploading our page images as "Auxillary Files" for our
+               TAPAS Record (but this isn't working at the moment). Instead, we can call on these files following a similar approach as outlined
+               above, except we add the file name and path as a value of @facs on <![CDATA[<pb/>]]>:</p>
+            <p>Pretend this is the last line of a page in my document <pb n="1"
+                  facs="https://farm1.staticflickr.com/919/41668854741_a55947fd40_m_d.jpg"/> and this is where that line continues on the next
+               page.</p>
          </div>
          <div>
-            <head rend="bold">OTHER USE CASES</head>
-            <p>1. Adding images through <![CDATA[<figure>]]> in a <![CDATA[<note>]]>: you can add images into your notes by using same setup as
-               scenario 1 in Basic Encoding above:</p>
-            <p><![CDATA[<figure><graphic url="https://farm1.staticflickr.com/919/41668854741_a55947fd40_m_d.jpg"/><head>Full Page from The Young Idea</head><figDesc>Fourth Page of Sixth Issue</figDesc></figure>]]></p>
-            <p>Click the note below:</p>
-            <note>Here's an image contained within a note: <figure>
-               <graphic url="https://farm1.staticflickr.com/919/41668854741_a55947fd40_m_d.jpg"/>
-                  <head>Full Page from The Young Idea</head>
-                  <figDesc>Fourth Page of Sixth Issue</figDesc>
-               </figure>
-            </note>
-            <p>2. Adding images to your -Ography support files: Yes, you can add images to your ography files using <![CDATA[<figure>]]>. These will
-               display in the TAPAS Reader. See an example here: <ref target="http://www.tapasproject.org/tapas-commons/files/sample-personography"
-                  >http://www.tapasproject.org/tapas-commons/files/sample-personography</ref> *Currently we do not support the display of image files
-               in ography support files in the dynamic popups of source Records.</p>
+            <head rend="bold">IMAGES IN NOTES</head>
+            <p>You can add images into your notes by using same setup as scenario 1 in Basic Encoding above. To see how this works, click the note at
+               the end of this sentence.<note>Here's an image contained within a note: <figure>
+                     <graphic url="https://farm1.staticflickr.com/919/41668854741_a55947fd40_m_d.jpg"/>
+                  </figure>
+               </note></p>
          </div>
       </body>
    </text>
